@@ -77,13 +77,13 @@ Ensures incompressibility.
 ## Simulation Examples
 
 
-![Velocity Field](assets/fluid1.gif)
+![fluid_example1](assets/fluid1.webm)
 
 
-![Density Diffusion](assets/fluid2.gif)
+![fluid_example1](assets/fluid2.webm)
 
 
-![Full Simulation](assets/fluid3.webm)
+![velocity_field](assets/fluid3.webm)
 
 
 ---
