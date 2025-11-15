@@ -77,7 +77,7 @@ Ensures incompressibility.
 ## Simulation Examples
 
 
-![fluid_example1](assets/fluid1.mp4)
+![fluid_example1](assets/fluid1.gif)
 
 
 ![fluid_example1](assets/fluid2.mp4)
