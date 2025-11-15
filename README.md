@@ -1,90 +1,54 @@
 # 2D Fluid Simulation in Python
 
-This project implements an interactive 2D fluid simulation based on the incompressible Navier–Stokes equations.  
-It uses a combination of **semi-Lagrangian advection**, **implicit diffusion**, and an **FFT-based projection method** to enforce incompressibility.  
-A Pygame UI allows real-time interaction, parameter tuning, and live visualization.
+This project implements an interactive 2D fluid solver based on the incompressible Navier–Stokes equations.  
+The simulation combines **semi-Lagrangian advection**, **FFT-based diffusion**, and an **FFT-based pressure projection**, while a Pygame interface provides real-time interaction and visualization.
 
 ---
 
-## Features
+### 🔹 Algorithm
 
-### 🔹 Numerical Core
-- Semi-Lagrangian advection (stable for large time steps)
-- Implicit diffusion step
-- FFT-based pressure projection  
-  Solves  
-  \[
-  \Delta p = \nabla \cdot u
-  \]  
-  in Fourier space with  
-  \[
-  \hat{p}(k) = \frac{\widehat{\nabla\cdot u}}{-|k|^2}
-  \]
-- Velocity correction via  
-  \[
-  u_{\text{new}} = u - \nabla p
-  \]
+Each frame, the velocity and density fields are advected using a semi-Lagrangian step with bilinear interpolation.  
+User input adds forces directly to the velocity field. Diffusion and the pressure solve are performed in Fourier space, ensuring stability and enforcing incompressibility.  
+Density is transported in the same way and lightly damped. With periodic boundaries and these stable update rules, the simulation produces smooth, swirling 2D flow.
+
+---
 
 ### 🔹 Pygame Interface
-- Adjustable simulation size and scaling
-- Real-time parameter menu (viscosity, timestep, force strength, visualization mode)
-- Interactive mouse input for forces and density
-- Info overlay on hover
-- Pause/reset functionality
+
+- Adjustable simulation size and scaling  
+- Real-time parameter menu (viscosity, timestep, radius, speed, resolution, colour)  
+- Interactive mouse input for forcing and density  
+- Optional velocity-field visualization  
+- Info overlay on hover  
 
 ---
-
-## Usage
-
-Run the simulation with:
-
-```bash
-python3 main.py
-```
 
 ### Controls
-- **Right Mouse Button** – Add velocity (forces)
-- **Left Mouse Button** – Add density (“smoke”)
-- **Hover over info icon** – Show info panel
 
----
-
-
-## How It Works
-
-### 1. Advection  
-Semi-Lagrangian method using backtracing for numerical stability.
-
-### 2. Diffusion  
-Implicit step solved via iterative smoothing.
-
-### 3. Pressure Projection  
-Computes divergence, solves Poisson equation via FFTs:
-
-```python
-p_hat = div_hat / (-K_sq)
-```
-
-Ensures incompressibility.
-
-### 4. Visualization  
-- RGB color mapping of velocity magnitude  
-- Vector field arrows  
-- Adjustable resolution and scaling
+- **Right Mouse Button** – Add velocity (forces)  
+- **Left Mouse Button** – Add density (“smoke”)  
 
 ---
 
 ## Simulation Examples
 
-
 ![fluid_example1](assets/fluid1.gif)
 
+![fluid_example2](assets/fluid2.gif)
 
-![fluid_example1](assets/fluid2.mp4)
+![velocity_field](assets/fluid3.gif)
 
+---
 
-![velocity_field](assets/fluid3.mp4)
+## Installation & Run
 
+1. Install the required packages:
+   pip install -r requirements.txt
+
+2. Start the simulation:
+   python main.py
+
+The Pygame window will open immediately and can be controlled with the mouse.
 
 ---
 
