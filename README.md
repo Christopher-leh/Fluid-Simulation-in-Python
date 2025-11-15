@@ -43,32 +43,12 @@ python3 main.py
 ```
 
 ### Controls
-- **Left Mouse Button** – Add velocity (forces)
-- **Right Mouse Button** – Add density (“smoke”)
-- **Space** – Pause / resume
-- **R** – Reset simulation
+- **Right Mouse Button** – Add velocity (forces)
+- **Left Mouse Button** – Add density (“smoke”)
 - **Hover over info icon** – Show info panel
 
 ---
 
-## File Structure
-
-```
-├── main.py               # Pygame UI, event handling, visualization
-├── fluid_class.py        # Fluid class: state, stepping, solving
-├── fluid_functions.py    # Numerical functions (advection, diffusion, projection)
-└── README.md
-```
-
----
-
-## Requirements
-
-```bash
-pip install numpy pygame scipy
-```
-
----
 
 ## How It Works
 
