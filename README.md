@@ -77,13 +77,13 @@ Ensures incompressibility.
 ## Simulation Examples
 
 
-![fluid_example1](assets/fluid1.webm)
+![fluid_example1](assets/fluid1.mp4)
 
 
-![fluid_example1](assets/fluid2.webm)
+![fluid_example1](assets/fluid2.mp4)
 
 
-![velocity_field](assets/fluid3.webm)
+![velocity_field](assets/fluid3.mp4)
 
 
 ---
