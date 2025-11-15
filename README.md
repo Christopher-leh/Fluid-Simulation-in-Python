@@ -76,18 +76,14 @@ Ensures incompressibility.
 
 ## Simulation Examples
 
-<table>
-<tr>
-<td><b>Velocity Field</b></td>
-<td><b>Density Diffusion</b></td>
-<td><b>Full Simulation</b></td>
-</tr>
-<tr>
-<td><img src="assets/fluid1.webm" width="220"/></td>
-<td><img src="assets/fluid2.webm" width="220"/></td>
-<td><video src="assets/fluid3.webm" width="220" autoplay loop muted></video></td>
-</tr>
-</table>
+
+![Velocity Field](assets/fluid1.gif)
+
+
+![Density Diffusion](assets/fluid2.gif)
+
+
+![Full Simulation](assets/fluid3.webm)
 
 
 ---
