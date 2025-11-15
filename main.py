@@ -87,7 +87,7 @@ def main():
     pygame.display.set_caption("Fluid Simulation")
     clock = pygame.time.Clock()                                  #clock für fps beschränkung
     try:
-        font = pygame.font.Font("Montserrat-Regular.ttf", 20)    #schriftart setzen
+        font = pygame.font.Font("assets/Montserrat-Regular.ttf", 20)    #schriftart setzen
     except:
         font = pygame.font.Font(None, 20)                        #wenn nicht möglich standard schriftart
 
