@@ -54,7 +54,8 @@ The Pygame window will open immediately and can be controlled with the mouse.
 
 ### References
 
-- Jos Stam – *Stable Fluids* (1999), SIGGRAPH  
+- Jos Stam – *Stable Fluids* (1999), SIGGRAPH
+  https://pages.cs.wisc.edu/~chaol/data/cs777/stam-stable_fluids.pdf
 - Jos Stam – *Real-Time Fluid Dynamics for Games* (2003)  
   https://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf  
 - Eulerian Grid-Based Fluid Simulation (Seminar Report, Universität Freiburg)  
