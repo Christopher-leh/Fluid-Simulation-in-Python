@@ -32,11 +32,11 @@ Density is transported in the same way and lightly damped. With periodic boundar
 
 ## Simulation Examples
 
-![fluid_example1](assets/fluid1.gif)
-
-![fluid_example2](assets/fluid2.gif)
-
-![velocity_field](assets/fluid3.gif)
+<p float="left">
+  <img src="assets/fluid1.gif" width="32%" />
+  <img src="assets/fluid2.gif" width="32%" />
+  <img src="assets/fluid3.gif" width="32%" />
+</p>
 
 ---
 
